@@ -1,0 +1,291 @@
+/* Global Styles */  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #653408 0%, #B22222 49%, #160B02 100%);
+    color: #fff;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Estilo para os itens do menu */
+  .menu {
+    display: flex;
+    gap: 30px; /* Espaçamento entre os links */
+  }
+  
+  .menu a {
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.6s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #000000b2; /* Cor de fundo ao passar o mouse */
+    border-radius: 15px; /* Bordas arredondadas */
+  }
+  
+  h2 {
+    margin-left: 20px;
+    font-size: 1.5em;
+    padding-top: 10px;
+  }
+  
+  .scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 5px 0;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  
+  .scroll-container {
+    overflow-x: hidden;
+  }
+  
+  .scroll-container .item {
+    flex: 0 0 auto;
+    width: 160px;
+    height: auto;
+  }
+  
+  
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #FFD700;
+    border-radius: 10px;
+  }
+  
+  .item img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.9s;
+  }
+  
+  .item img:hover {
+    transform: scale(1.1);
+  }
+  
+  .item p {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
+  button.prev-btn, button.next-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 40px;
+  }
+  
+  button.prev-btn:hover, button.next-btn:hover {
+    background-color: rgba(255, 215, 0, 0.8);
+  }
+  
+  header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .navbar .logo img {
+    height: 80px;
+  }
+  
+  
+  
+  .navbar .menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+  }
+  
+  .navbar .menu a:hover {
+    color: #FFD700;
+  }
+  
+  .search-bar {
+    background-color: #222;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .search-bar::placeholder {
+    color: #bbb;
+  }
+  
+  .search-bar:focus {
+    background-color: #333;
+  }
+  
+  .search-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  
+  .search-btn i {
+    color: white;
+  }
+  
+  .search-btn:hover i {
+    color: #FFD700;
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(247, 2, 2, 0.384);
+  }
+  
+  .menu-btn:hover {
+    background-color: #ffee00;
+    transform: scale(1.1);
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    color: white;
+  }
+  
+  
+  .genres {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .genres button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .genres button:hover {
+    background-color: #FF4500;
+  }
+  
+  /* Ajustes no rodapé */
+  footer {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 40px 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Itim', cursive; /* Aplicando a fonte Itim */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px; /* Garantindo que as seções não fiquem muito pequenas */
+  }
+  
+  .footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #FFD700; /* Cor dourada para os títulos */
+    text-transform: uppercase; /* Transformando os títulos em maiúsculas */
+  }
+  
+  .footer-section ul, .footer-section p {
+    font-size: 16px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fffb00; /* Efeito de hover dourado */
+  }
+  
+  .footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #FFD700;
+    padding-top: 10px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #FFD700;
+  }
